@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  #about-us {
+    background-color: #f8f9fa;
+  }
+  
+  #projects .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #projects .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  #contact {
+    background-color: #e9ecef;
+  }
+
+  /* Ensure the navbar links don't wrap */
+.navbar-nav .nav-link {
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  
+  /* Adjust the logo size for better alignment */
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Add some margin to the navbar brand */
+  .navbar-brand {
+    margin-right: 30px;
+  }
+
+  .card-img-top {
+    height: auto;
+  }
+  
+  
