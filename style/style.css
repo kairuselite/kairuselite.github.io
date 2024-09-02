@@ -19,7 +19,7 @@ body {
     background-color: #e9ecef;
   }
 
-  /* Ensure the navbar links don't wrap */
+  /* Ensure the navbar links don't wrap #00a67f */ 
 .navbar-nav .nav-link {
     white-space: nowrap;
     margin-right: 20px;
@@ -39,5 +39,92 @@ body {
   .card-img-top {
     height: auto;
   }
-  
-  
+
+/* Full-width carousel */
+.carousel-item {
+  height: 95vh;
+  min-height: 400px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  position: relative;
+}
+
+/* Text overlay on carousel */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+/* Background overlay to make text readable */
+.carousel-caption-bg {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* SLIDER */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden;
+}
+
+.before-image,
+.after-image {
+  width: 100%;
+  display: block;
+}
+
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 50% 0 0); /* Initially reveal half of the after image */
+  transition: clip-path 0.3s ease;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Initially place slider in the middle */
+  width: 3px;
+  background-color: #fff;
+  cursor: ew-resize;
+  transition: left 0.3s ease;
+}
+
+.slider:hover {
+  background-color: #ccc;
+}
+
+/* /SLIDER */
+
+.card-3d {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* subtle shadow for 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for enhanced 3D */
+.card-3d:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: #00a67f;
+  border: none;
+}
+
+.btn:hover {
+  color: #00a67f;
+  background-color: white;
+}
