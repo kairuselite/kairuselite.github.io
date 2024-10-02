@@ -40,6 +40,10 @@ body {
     height: auto;
   }
 
+.main-pic {
+  width: 100rem;
+}
+
 /* Full-width carousel */
 .carousel-item {
   height: 95vh;
